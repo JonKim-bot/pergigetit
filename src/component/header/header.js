@@ -29,6 +29,16 @@ const ColorButton = withStyles((theme) => ({
     },
   }))(Button);
 
+  const ColorSearchButton = withStyles((theme) => ({
+    root: {
+      color: "#fff",
+      backgroundColor: green[500],
+      '&:hover': {
+        backgroundColor: green[700],
+      },
+    },
+  }))(Button);
+
 const useStyles = makeStyles((theme) => ({
     logo: {
         width: 150,
@@ -239,10 +249,11 @@ export default function Header({}) {
                             }}
                             inputProps={{ 'aria-label': 'search' }}
                             >
-                                <ColorButton variant="contained" color="primary" className={classes.margin}>
-                                    Start Selling
-                                </ColorButton>
+                                
                             </InputBase>
+                            <ColorSearchButton variant="contained" color="primary" className={classes.margin}>
+                                    Search
+                                </ColorSearchButton>
                         </div>
                     </div>
                     <div className={classes.grow} />

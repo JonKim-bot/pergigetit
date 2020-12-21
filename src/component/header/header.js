@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../header/header.css'
 import Logo from '../../assets/img/logo.png'
-import { fade, makeStyles } from '@material-ui/core/styles';
+import { fade, makeStyles, withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -16,6 +16,18 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import Button from '@material-ui/core/Button';
+import { green, purple } from '@material-ui/core/colors';
+
+const ColorButton = withStyles((theme) => ({
+    root: {
+      color: "#fff",
+      backgroundColor: green[500],
+      '&:hover': {
+        backgroundColor: green[700],
+      },
+    },
+  }))(Button);
 
 const useStyles = makeStyles((theme) => ({
     logo: {
@@ -23,16 +35,25 @@ const useStyles = makeStyles((theme) => ({
         height: 100,
     },
     grow: {
-      flexGrow: 1,
+      flexGrow: "initial",
+      justifyContent: "center",
     },
     menuButton: {
-      marginRight: theme.spacing(2),
+      marginRight: theme.spacing(0),
     },
     title: {
       display: 'none',
       [theme.breakpoints.up('sm')]: {
         display: 'block',
       },
+    },
+    middle: {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    iconMenu: {
+        display: 'flex',
+        alignItems: 'center'
     },
     search: {
       position: 'relative',
@@ -41,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     //   '&:hover': {
     //     backgroundColor: fade(theme.palette.common.white, 0.25),
     //   },
-      backgroundColor: "grey",
+      backgroundColor: "#d9d9d9",
       marginRight: theme.spacing(2),
       marginLeft: 0,
       width: '100%',
@@ -190,35 +211,43 @@ export default function Header({}) {
             </div> */}
             <div className={classes.grow}>
                 <AppBar position="static" style={{backgroundColor: "white", color: "black"}}>
-                    <Toolbar>
+                    <Toolbar style={{justifyContent: "space-around"}}>
                     <img src={Logo} className={classes.logo} alt="Logo" />
-                    <IconButton
-                        edge="start"
-                        className={classes.menuButton}
-                        color="inherit"
-                        aria-label="Apps"
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography className={classes.title} variant="h6" noWrap>
-                        Category
-                    </Typography>
-                    <div className={classes.search}>
-                        <div className={classes.searchIcon}>
-                        <SearchIcon />
+                    <div className={classes.middle}>
+                        <div className={classes.iconMenu}>
+                            <IconButton
+                                edge="start"
+                                className={classes.menuButton}
+                                color="inherit"
+                                aria-label="Apps"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Typography className={classes.title} variant="h6" noWrap>
+                                Category
+                            </Typography>
                         </div>
-                        <InputBase
-                        placeholder="Search…"
-                        classes={{
-                            root: classes.inputRoot,
-                            input: classes.inputInput,
-                        }}
-                        inputProps={{ 'aria-label': 'search' }}
-                        />
+                        <div className={classes.search}>
+                            <div className={classes.searchIcon}>
+                            <SearchIcon />
+                            </div>
+                            <InputBase
+                            placeholder="Search…"
+                            classes={{
+                                root: classes.inputRoot,
+                                input: classes.inputInput,
+                            }}
+                            inputProps={{ 'aria-label': 'search' }}
+                            >
+                                <ColorButton variant="contained" color="primary" className={classes.margin}>
+                                    Start Selling
+                                </ColorButton>
+                            </InputBase>
+                        </div>
                     </div>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <IconButton aria-label="show 4 new mails" color="inherit">
+                        {/* <IconButton aria-label="show 4 new mails" color="inherit">
                         <Badge badgeContent={4} color="secondary">
                             <MailIcon />
                         </Badge>
@@ -237,7 +266,10 @@ export default function Header({}) {
                         color="inherit"
                         >
                         <AccountCircle />
-                        </IconButton>
+                        </IconButton> */}
+                        <ColorButton variant="contained" color="primary" className={classes.margin}>
+                            Start Selling
+                        </ColorButton>
                     </div>
                     <div className={classes.sectionMobile}>
                         <IconButton

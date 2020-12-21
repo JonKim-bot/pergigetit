@@ -9,12 +9,13 @@ import { List } from "@material-ui/core";
 
 export default function Footer({}) {
   return (
+      <>
     <div className="footer">
       <Container maxWidth="lg">
         <Grid
           container
           direction="row"
-          justify="space-around"
+          justify="space-between"
           alignSelf = "center"
         >
           <div className="c-list">
@@ -63,10 +64,15 @@ export default function Footer({}) {
           </div>
         </Grid>
 
-      </Container>
+        </Container>
 
+
+    </div>
         <div className="footer-bar">
-            <div className="footer-inner-div">
+            <Container maxWidth="lg"
+            className="footer-inner-div"
+            style={{display:'flex'}}
+            >
 
                 <div className="footer-bar-inner first">
                     <p>Words</p>
@@ -83,11 +89,11 @@ export default function Footer({}) {
                 <div className="footer-bar-inner">
                     <p>Words</p>
                 </div>
-            </div>
+            </Container>
 
         </div>
 
-    </div>
+    </>
   );
 }
 

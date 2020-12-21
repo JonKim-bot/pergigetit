@@ -77,7 +77,7 @@ export default function Footer({}) {
         <Grid
           container
           direction="row"
-          justify="space-between"
+          justify="flex-start"
           alignSelf = "center"
         >
 

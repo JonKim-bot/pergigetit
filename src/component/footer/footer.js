@@ -21,45 +21,37 @@ export default function Footer({}) {
           <div className="c-list">
             <ul className ="c-inner-list">
               <li className="first-list"><h4>Propular Category</h4></li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
+              <li>Vehicles</li>
+              <li>Property</li>
+              <li>Apparel</li>
+              <li>Electronics</li>
+              <li>Entertainment</li>
+              <li>Home Goods</li>
+              <li>Pet Supplies</li>
+              <li>Toy & Games</li>
             </ul>
           </div>
           <div className="c-list">
             <ul className ="c-inner-list">
-              <li className="first-list"><h4>Propular Category</h4></li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
+              <li className="first-list"><h4>Got It Account</h4></li>
+              <li>Sign In</li>
+              <li>Register</li>
+              <li>Forgot Password</li>
             </ul>
           </div>
           <div className="c-list">
             <ul className ="c-inner-list">
-              <li className="first-list"><h4>Propular Category</h4></li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
+              <li className="first-list"><h4>Sell</h4></li>
+              <li>Upload Product</li>
+              <li>Buy Slot</li>
             </ul>
           </div>
           <div className="c-list">
             <ul className ="c-inner-list">
-              <li className="first-list"><h4>Propular Category</h4></li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
-              <li>123213</li>
+              <li className="first-list"><h4>Follow Us</h4></li>
+              <li>Facebook</li>
+              <li>Istagram</li>
+              <li>Twitter</li>
             </ul>
           </div>
         </Grid>
@@ -83,19 +75,19 @@ export default function Footer({}) {
 
 
                 <div className="footer-bar-inner first">
-                    <p>Words</p>
+                    <p>© Got It 2020</p>
                 </div>
                 <div className="footer-bar-inner">
-                    <p>Words</p>
+                    <p>Help Centre</p>
                 </div>
                 <div className="footer-bar-inner">
-                    <p>Words</p>
+                    <p>Advertise with Us</p>
                 </div>
                 <div className="footer-bar-inner">
-                    <p>Words</p>
+                    <p>Terms</p>
                 </div>
                 <div className="footer-bar-inner">
-                    <p>Words</p>
+                    <p>Privacy</p>
                 </div>
         </Grid>
             </Container>

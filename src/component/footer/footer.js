@@ -74,6 +74,14 @@ export default function Footer({}) {
             style={{display:'flex'}}
             >
 
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+          alignSelf = "center"
+        >
+
+
                 <div className="footer-bar-inner first">
                     <p>Words</p>
                 </div>
@@ -89,6 +97,7 @@ export default function Footer({}) {
                 <div className="footer-bar-inner">
                     <p>Words</p>
                 </div>
+        </Grid>
             </Container>
 
         </div>

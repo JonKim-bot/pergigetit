@@ -170,7 +170,8 @@ export default function MarketPlace() {
                                     All (145)
                                 </Link>
                             </div>
-                            <div onClick={ () => { onChangeIndex('2') } }
+                            <div 
+                            onClick={ () => { onChangeIndex('2') } }
                             className={ index==='2' ? "c-btn-active" : "c-btn-unactive" }>
                                 <Link className="c-btnprimary">
                                     <div className="c-searchicon">
@@ -179,7 +180,9 @@ export default function MarketPlace() {
                                     New (5)
                                 </Link>
                             </div>
-                            <div className="c-btn-unactive">
+                            <div 
+                            onClick={ () => { onChangeIndex('3') } }
+                            className={ index==='3' ? "c-btn-active" : "c-btn-unactive" }>
                                 <Link className="c-btnprimary">
                                     <div className="c-searchicon">
                                         <img src={fast_icon} />
@@ -187,7 +190,9 @@ export default function MarketPlace() {
                                     Selling Fast (145)
                                 </Link>
                             </div>
-                            <div className="c-btn-unactive">
+                            <div 
+                            onClick={ () => { onChangeIndex('4') } }
+                            className={ index==='4' ? "c-btn-active" : "c-btn-unactive" }>
                                 <Link className="c-btnprimary">
                                     <div className="c-searchicon">
                                         <img src={sold_icon} />
@@ -195,7 +200,7 @@ export default function MarketPlace() {
                                     Sold Out (345)
                                 </Link>
                             </div>
-                            <div className="c-search desktop_flex">
+                            <div className="c-select desktop_flex">
                                 <div className="c-searchwrapper">
                                 <FormControl className={classes.formControl}>
                                     <Select
@@ -218,241 +223,403 @@ export default function MarketPlace() {
                         </div>
                     </div>
                     { index === '1' && 
-                    <div>
-                        <Grid container spacing={3}>
-                            <Grid xs={6} md={4}>
+                        <div>
+                            <Grid container spacing={3}>
+                                <Grid xs={6} md={4}>
+                                    <div className="c-card">
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
+                                            </div>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
+                                            </div>
+                                        </div>
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </Grid>
+                                <Grid xs={6} md={4}>
+                                    <div className="c-card">
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
+                                            </div>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
+                                            </div>
+                                        </div>
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </Grid>
+                                <Grid xs={6} md={4}>
                                 <div className="c-card">
-                                    <div className="c-therow">
-                                        <div className="c-subrow">
-                                            <div className="c-avantar">
-                                                <img src={avantar}/>
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
                                             </div>
-                                            <div className="c-detail">
-                                                <p className="bold">JNDesign Store</p>
-                                                <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
                                             </div>
                                         </div>
-                                        <div className="c-navbox">
-                                            <Link className="nav-link colorprimary">
-                                                <AddIcon className="padd-right"/>
-                                                Follow
-                                            </Link>
-                                            <Link className="nav-link">
-                                                <AccountCircleOutlinedIcon className="padd-right"/>
-                                                Private
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
                                             </Link>
                                         </div>
                                     </div>
-                                    <div className="c-subdetail">
-                                        <p>Watch Accessories</p>
-                                        <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
-                                    </div>
-                                    <div className="c-freshprod">
-                                        <img src={thecomputer}/>
-                                    </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
-                                    </div>
-                                </div>
+                                </Grid>
                             </Grid>
-                            <Grid xs={6} md={4}>
-                                <div className="c-card">
-                                    <div className="c-therow">
-                                        <div className="c-subrow">
-                                            <div className="c-avantar">
-                                                <img src={avantar}/>
-                                            </div>
-                                            <div className="c-detail">
-                                                <p className="bold">JNDesign Store</p>
-                                                <p className="descrip">345 listings available, Johor Bahru, Johor</p>
-                                            </div>
-                                        </div>
-                                        <div className="c-navbox">
-                                            <Link className="nav-link colorprimary">
-                                                <AddIcon className="padd-right"/>
-                                                Follow
-                                            </Link>
-                                            <Link className="nav-link">
-                                                <AccountCircleOutlinedIcon className="padd-right"/>
-                                                Private
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <div className="c-subdetail">
-                                        <p>Watch Accessories</p>
-                                        <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
-                                    </div>
-                                    <div className="c-freshprod">
-                                        <img src={thecomputer}/>
-                                    </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
-                                    </div>
-                                </div>
-                            </Grid>
-                            <Grid xs={6} md={4}>
-                            <div className="c-card">
-                                    <div className="c-therow">
-                                        <div className="c-subrow">
-                                            <div className="c-avantar">
-                                                <img src={avantar}/>
-                                            </div>
-                                            <div className="c-detail">
-                                                <p className="bold">JNDesign Store</p>
-                                                <p className="descrip">345 listings available, Johor Bahru, Johor</p>
-                                            </div>
-                                        </div>
-                                        <div className="c-navbox">
-                                            <Link className="nav-link colorprimary">
-                                                <AddIcon className="padd-right"/>
-                                                Follow
-                                            </Link>
-                                            <Link className="nav-link">
-                                                <AccountCircleOutlinedIcon className="padd-right"/>
-                                                Private
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <div className="c-subdetail">
-                                        <p>Watch Accessories</p>
-                                        <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
-                                    </div>
-                                    <div className="c-freshprod">
-                                        <img src={thecomputer}/>
-                                    </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
-                                    </div>
-                                </div>
-                            </Grid>
-                        </Grid>
-                    </div>
-                    
+                        </div>
                     }
 
                     { index === '2' && 
-                    <div>
-                        <Grid container spacing={3}>
-                            <Grid xs={6} md={4}>
+                        <div>
+                            <Grid container spacing={3}>
+                                
+                                <Grid xs={6} md={4}>
+                                    <div className="c-card">
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
+                                            </div>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
+                                            </div>
+                                        </div>
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </Grid>
+                                <Grid xs={6} md={4}>
                                 <div className="c-card">
-                                    <div className="c-therow">
-                                        <div className="c-subrow">
-                                            <div className="c-avantar">
-                                                <img src={avantar}/>
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
                                             </div>
-                                            <div className="c-detail">
-                                                <p className="bold">JNDesign Store</p>
-                                                <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
                                             </div>
                                         </div>
-                                        <div className="c-navbox">
-                                            <Link className="nav-link colorprimary">
-                                                <AddIcon className="padd-right"/>
-                                                Follow
-                                            </Link>
-                                            <Link className="nav-link">
-                                                <AccountCircleOutlinedIcon className="padd-right"/>
-                                                Private
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
                                             </Link>
                                         </div>
                                     </div>
-                                    <div className="c-subdetail">
-                                        <p>Watch Accessories</p>
-                                        <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
-                                    </div>
-                                    <div className="c-freshprod">
-                                        <img src={thecomputer}/>
-                                    </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
-                                    </div>
-                                </div>
+                                </Grid>
                             </Grid>
-                            <Grid xs={6} md={4}>
+                        </div>
+                    }
+
+                    { index === '3' && 
+                        <div>
+                            <Grid container spacing={3}>
+                                <Grid xs={6} md={4}>
+                                    <div className="c-card">
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
+                                            </div>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
+                                            </div>
+                                        </div>
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </Grid>
+                                <Grid xs={6} md={4}>
+                                    <div className="c-card">
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
+                                            </div>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
+                                            </div>
+                                        </div>
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </Grid>
+                                <Grid xs={6} md={4}>
                                 <div className="c-card">
-                                    <div className="c-therow">
-                                        <div className="c-subrow">
-                                            <div className="c-avantar">
-                                                <img src={avantar}/>
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
                                             </div>
-                                            <div className="c-detail">
-                                                <p className="bold">JNDesign Store</p>
-                                                <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
                                             </div>
                                         </div>
-                                        <div className="c-navbox">
-                                            <Link className="nav-link colorprimary">
-                                                <AddIcon className="padd-right"/>
-                                                Follow
-                                            </Link>
-                                            <Link className="nav-link">
-                                                <AccountCircleOutlinedIcon className="padd-right"/>
-                                                Private
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
                                             </Link>
                                         </div>
                                     </div>
-                                    <div className="c-subdetail">
-                                        <p>Watch Accessories</p>
-                                        <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
-                                    </div>
-                                    <div className="c-freshprod">
-                                        <img src={thecomputer}/>
-                                    </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
-                                    </div>
-                                </div>
+                                </Grid>
                             </Grid>
-                            <Grid xs={6} md={4}>
-                            <div className="c-card">
-                                    <div className="c-therow">
-                                        <div className="c-subrow">
-                                            <div className="c-avantar">
-                                                <img src={avantar}/>
+                        </div>
+                    }
+
+                    { index === '4' && 
+                        <div>
+                            <Grid container spacing={3}>
+                                
+                                <Grid xs={6} md={4}>
+                                    <div className="c-card">
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
                                             </div>
-                                            <div className="c-detail">
-                                                <p className="bold">JNDesign Store</p>
-                                                <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
                                             </div>
                                         </div>
-                                        <div className="c-navbox">
-                                            <Link className="nav-link colorprimary">
-                                                <AddIcon className="padd-right"/>
-                                                Follow
-                                            </Link>
-                                            <Link className="nav-link">
-                                                <AccountCircleOutlinedIcon className="padd-right"/>
-                                                Private
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
                                             </Link>
                                         </div>
                                     </div>
-                                    <div className="c-subdetail">
-                                        <p>Watch Accessories</p>
-                                        <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                </Grid>
+                                <Grid xs={6} md={4}>
+                                <div className="c-card">
+                                        <div className="c-therow">
+                                            <div className="c-subrow">
+                                                <div className="c-avantar">
+                                                    <img src={avantar}/>
+                                                </div>
+                                                <div className="c-detail">
+                                                    <p className="bold">JNDesign Store</p>
+                                                    <p className="descrip">345 listings available, Johor Bahru, Johor</p>
+                                                </div>
+                                            </div>
+                                            <div className="c-navbox">
+                                                <Link className="nav-link colorprimary">
+                                                    <AddIcon className="padd-right"/>
+                                                    Follow
+                                                </Link>
+                                                <Link className="nav-link">
+                                                    <AccountCircleOutlinedIcon className="padd-right"/>
+                                                    Private
+                                                </Link>
+                                            </div>
+                                        </div>
+                                        <div className="c-subdetail">
+                                            <p>Watch Accessories</p>
+                                            <p>CASIO Watch for Men MTP-VT01G-7BUDF</p>
+                                        </div>
+                                        <div className="c-freshprod">
+                                            <img src={thecomputer}/>
+                                        </div>
+                                        <div className="c-btn">
+                                            <Link className="c-btnprimary">
+                                                Visit Store
+                                            </Link>
+                                        </div>
                                     </div>
-                                    <div className="c-freshprod">
-                                        <img src={thecomputer}/>
-                                    </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
-                                    </div>
-                                </div>
+                                </Grid>
                             </Grid>
-                        </Grid>
-                    </div>
-                    
+                        </div>
                     }
                     
                 </div>

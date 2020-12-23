@@ -1,0 +1,49 @@
+.c-footer {
+  padding: 1rem;
+  background-color: #eeeeee;
+}
+.c-footer .navbar-footernav {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  align-items: center;
+}
+.c-footer .navbar-footernav .nav-footerlink {
+  padding: 0.5rem;
+  color: #000;
+  display: block;
+  text-decoration: none;
+}
+.c-footer .navbar-footernav .nav-socialfooter {
+  color: #000;
+  padding-right: 0.5rem;
+}
+
+.c-subfooter {
+  padding: 1rem;
+  background-color: #333333;
+  justify-content: center;
+}
+.c-subfooter .navbar-footernav {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.c-subfooter .navbar-footernav .nav-sublink {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.c-subfooter .c-copyright p {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=Footer.css.map */

@@ -1,19 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './component/header/header'
-import Footer from './component/footer/footer'
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './Routes';
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <div className="c-container">
-        
-      </div>
-      <Footer/>
-
-    </div>
-  );
+	return (
+	<BrowserRouter>
+		<Routes></Routes>
+	</BrowserRouter>
+	);
 }
 
 export default App;

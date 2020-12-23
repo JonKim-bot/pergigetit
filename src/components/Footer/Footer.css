@@ -38,6 +38,14 @@
   color: #fff;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+@media screen and (min-width: 992px) {
+  .c-subfooter .navbar-footernav .nav-sublink {
+    margin-bottom: 0rem;
+    display: inline;
+  }
 }
 .c-subfooter .c-copyright p {
   color: #fff;

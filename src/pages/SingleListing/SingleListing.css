@@ -1,0 +1,389 @@
+.c-sectionbackground {
+  position: relative;
+  background-color: #fff;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .c-sectionbackground {
+    padding: 2rem;
+  }
+}
+.c-sectionbackground .c-title_ {
+  margin-bottom: 1rem;
+}
+.c-sectionbackground .c-title_ .category {
+  color: #878787;
+  font-size: 14px;
+}
+.c-sectionbackground .c-title_ .c-row {
+  justify-content: space-between;
+  display: flex;
+}
+.c-sectionbackground .c-prodimg {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.c-sectionbackground .c-prodimg img {
+  width: 100%;
+}
+.c-sectionbackground .c-flexrowimg {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: unset;
+  overflow-x: auto;
+}
+.c-sectionbackground .c-flexrowimg .nav-link {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, calc(100% - 20px));
+  grid-auto-columns: calc(100% - 2rem);
+}
+.c-sectionbackground .c-flexrowimg .nav-link img {
+  width: 140px;
+}
+.c-sectionbackground .c-therow {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .c-sectionbackground .c-therow {
+    margin: 0 0 0 3rem;
+  }
+}
+.c-sectionbackground .c-therow .c-subrow {
+  align-items: center;
+  display: flex;
+}
+.c-sectionbackground .c-therow .c-subrow .c-avantar {
+  position: relative;
+  width: 30%;
+  margin-right: 1rem;
+}
+.c-sectionbackground .c-therow .c-subrow .c-avantar img {
+  width: 100%;
+}
+.c-sectionbackground .c-therow .c-subrow .c-detail {
+  width: 70%;
+}
+.c-sectionbackground .c-therow .c-subrow .c-detail .bold {
+  color: #000;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+.c-sectionbackground .c-therow .c-subrow .c-detail .descrip {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0;
+}
+.c-sectionbackground .c-subdetail {
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .c-sectionbackground .c-subdetail {
+    margin: 0 0 0 3rem;
+  }
+}
+.c-sectionbackground .c-subdetail .c-row_ {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.c-sectionbackground .c-subdetail .c-row_ .c-rowdetail {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.c-sectionbackground .c-subdetail .nav {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.c-sectionbackground .c-subdetail .nav .nav-link {
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  color: #333333;
+  padding-right: 2rem;
+}
+.c-sectionbackground .c-subdetail .nav .nav-link .colorSecondary {
+  color: #333333;
+  align-items: center;
+  margin-right: 1rem;
+}
+.c-sectionbackground .c-subdetail .nav .nav-link img {
+  width: 23%;
+  margin-right: 1rem;
+}
+.c-sectionbackground .c-navbox {
+  align-items: center;
+  display: flex;
+  display: block;
+}
+.c-sectionbackground .c-navbox .nav-link {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: #878787;
+}
+.c-sectionbackground .c-navbox .nav-link .padd-right {
+  margin-right: 0.5rem;
+}
+.c-sectionbackground .c-navbox .colorprimary {
+  color: #dba514;
+}
+.c-sectionbackground .c-subdetail_ {
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .c-sectionbackground .c-subdetail_ {
+    margin: 0 0 0 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .c-sectionbackground .c-subdetail_ {
+    margin: 0 0 0 3rem;
+  }
+}
+.c-sectionbackground .c-subdetail_ .c-row_ {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.c-sectionbackground .c-subdetail_ .c-row_ .c-rowdetail {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.c-sectionbackground .c-subdetail_ .nav {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.c-sectionbackground .c-subdetail_ .nav .nav-link {
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  color: #333333;
+  padding-right: 2rem;
+}
+.c-sectionbackground .c-subdetail_ .nav .nav-link .colorSecondary {
+  color: #333333;
+  align-items: center;
+  margin-right: 1rem;
+}
+.c-sectionbackground .c-subdetail_ .nav .nav-link img {
+  width: 23%;
+  margin-right: 1rem;
+}
+.c-sectionbackground .c-subdetail_ .c-contact {
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+.c-sectionbackground .c-subdetail_ .c-contact .c-btncontact {
+  position: relative;
+  background-color: #f8f8f8;
+  border: #878787;
+  border-radius: 8px;
+  padding: 1rem;
+  display: block;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #333333;
+  text-decoration: none;
+}
+.c-sectionbackground .c-subdetail_ .c-contact .c-btncontact .padd-right {
+  margin-right: 0.5rem;
+}
+.c-sectionbackground .c-ads {
+  position: relative;
+  width: 49%;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .c-sectionbackground .c-ads {
+    margin: 0 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .c-sectionbackground .c-ads {
+    margin: 0 3rem;
+  }
+}
+.c-sectionbackground .c-ads img {
+  width: 100%;
+}
+.c-sectionbackground .c-thedetail {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+}
+.c-sectionbackground .c-thedetail .c-segement {
+  display: flex;
+  border-top: 1px solid #878787;
+}
+.c-sectionbackground .c-thedetail .c-segement .unselectIndex {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  padding: 1rem;
+  color: #999999;
+}
+.c-sectionbackground .c-thedetail .c-segement .selectedIndex {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  padding: 1rem;
+  border-top: 2px solid #000;
+}
+.c-sectionbackground .c-thedetail .c-segement .padd-right {
+  margin-right: 0.5rem;
+}
+.c-sectionbackground .c-thedetail .c-desp {
+  padding: 1rem;
+}
+.c-sectionbackground .c-thedetail .c-desp .c-report {
+  position: relative;
+  background-color: #f8f8f8;
+  border: 1px solid #999999;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .c-sectionbackground .c-thedetail .c-desp .c-report {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .c-sectionbackground .c-thedetail .c-desp .c-report {
+    width: 28%;
+  }
+}
+.c-sectionbackground .c-card {
+  position: relative;
+  width: 88%;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.c-sectionbackground .c-card .c-therow {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.c-sectionbackground .c-card .c-therow .c-subrow {
+  align-items: center;
+  display: flex;
+}
+.c-sectionbackground .c-card .c-therow .c-subrow .c-avantar {
+  position: relative;
+  width: 20%;
+  margin-right: 1rem;
+}
+.c-sectionbackground .c-card .c-therow .c-subrow .c-avantar img {
+  width: 100%;
+}
+.c-sectionbackground .c-card .c-therow .c-subrow .c-detail {
+  width: 70%;
+}
+.c-sectionbackground .c-card .c-therow .c-subrow .c-detail .bold {
+  color: #000;
+  font-weight: 700;
+}
+.c-sectionbackground .c-card .c-therow .c-subrow .c-detail .descrip {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.c-sectionbackground .c-card .c-navbox {
+  align-items: center;
+  display: flex;
+  display: block;
+}
+.c-sectionbackground .c-card .c-navbox .nav-link {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: #878787;
+}
+.c-sectionbackground .c-card .c-navbox .nav-link .padd-right {
+  margin-right: 0.5rem;
+}
+.c-sectionbackground .c-card .c-navbox .colorprimary {
+  color: #dba514;
+}
+.c-sectionbackground .c-card .c-subdetail p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.c-sectionbackground .c-card .c-prod {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #eeeeee;
+}
+.c-sectionbackground .c-card .c-prod img {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.c-sectionbackground .c-card .c-freshprod {
+  width: 100%;
+  margin: 0 auto;
+}
+.c-sectionbackground .c-card .c-freshprod img {
+  width: 100%;
+}
+.c-sectionbackground .c-card .c-btn {
+  text-align: center;
+  margin-top: 1rem;
+}
+.c-sectionbackground .c-card .c-btn .c-btnprimary {
+  position: relative;
+  width: 100%;
+  background-color: #dba514;
+  background: linear-gradient(118deg, #dba514 0%, #af8231 100%);
+  padding: 1rem 0rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.c-sectionbackground .c-card .c-freshdetail {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+.c-sectionbackground .c-card .c-freshdetail .colorHeart {
+  color: #e42400;
+}
+
+.c-2title {
+  margin: 2.5rem 0;
+}
+
+/*# sourceMappingURL=SingleListing.css.map */

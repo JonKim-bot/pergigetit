@@ -20,6 +20,7 @@
   background-color: #fff;
   padding: 1rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .c-section .c-card .c-therow {
   align-items: center;
@@ -110,6 +111,15 @@
   text-align: center;
   display: block;
 }
+.c-section .c-card .c-freshdetail {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+.c-section .c-card .c-freshdetail .colorHeart {
+  color: #e42400;
+}
 .c-section .c-banner2 {
   width: 100%;
   margin: 3rem 0;
@@ -134,7 +144,12 @@
 }
 
 .slick-prev {
-  left: -20px;
+  left: -15px;
+}
+@media screen and (min-width: 768px) {
+  .slick-prev {
+    left: -20px;
+  }
 }
 @media screen and (min-width: 992px) {
   .slick-prev {
@@ -143,7 +158,12 @@
 }
 
 .slick-next {
-  right: -20px;
+  right: -15px;
+}
+@media screen and (min-width: 768px) {
+  .slick-next {
+    right: -20px;
+  }
 }
 @media screen and (min-width: 992px) {
   .slick-next {

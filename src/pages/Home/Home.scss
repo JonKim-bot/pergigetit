@@ -22,6 +22,7 @@
         background-color: #fff;
         padding: 1rem;
         margin: 0 auto;
+            margin-bottom: 2rem;
 
         .c-therow{
             align-items: center;
@@ -132,6 +133,18 @@
     
             }
         }
+
+        .c-freshdetail{
+            justify-content: space-between;
+            display: flex;
+            margin-top: 1rem;
+            align-items: center;
+
+            .colorHeart{
+                color: #e42400;
+            }
+
+        }
     }
 
     .c-banner2{
@@ -167,7 +180,11 @@
 }
 
 .slick-prev {
-    left: -20px;
+    left: -15px;
+
+    @media screen and (min-width: 768px) {
+        left: -20px;
+    }
 
     @media screen and (min-width: 992px) {
         left: -25px;
@@ -175,7 +192,11 @@
 }
 
 .slick-next {
-    right: -20px;
+    right: -15px;
+
+    @media screen and (min-width: 768px) {
+        right: -20px;
+    }
 
     @media screen and (min-width: 992px) {
         right: -25px;

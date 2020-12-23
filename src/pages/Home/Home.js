@@ -8,6 +8,7 @@ import avantar from '../../assets/images/avantar.png'
 import thewatch from '../../assets/images/thewatch.png'
 import thecomputer from '../../assets/images/thecomputer.png'
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom'
 import Slider from "react-slick";
@@ -324,9 +325,9 @@ export default function Home() {
                     <div className="c-title">
                         <h2>Fresh Listings</h2>
                     </div>
-                    <div>
+                    <div className="c-section">
                         <Grid container spacing={3}>
-                            <Grid xs={6} md={4}>
+                            <Grid xs={12} sm={6} md={4}>
                                 <div className="c-card">
                                     <div className="c-therow">
                                         <div className="c-subrow">
@@ -356,14 +357,20 @@ export default function Home() {
                                     <div className="c-freshprod">
                                         <img src={thecomputer}/>
                                     </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
+                                    <div className="c-freshdetail">
+                                        <div>
+                                            <FavoriteIcon className="colorHeart"/>
+                                        </div>
+                                        <div>
+                                            RM 3,899
+                                        </div>
+                                        <div>
+                                            New
+                                        </div>
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid xs={6} md={4}>
+                            <Grid xs={12} sm={6} md={4}>
                                 <div className="c-card">
                                     <div className="c-therow">
                                         <div className="c-subrow">
@@ -393,15 +400,21 @@ export default function Home() {
                                     <div className="c-freshprod">
                                         <img src={thecomputer}/>
                                     </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
+                                    <div className="c-freshdetail">
+                                        <div>
+                                            <FavoriteIcon className="colorHeart"/>
+                                        </div>
+                                        <div>
+                                            RM 3,899
+                                        </div>
+                                        <div>
+                                            New
+                                        </div>
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid xs={6} md={4}>
-                            <div className="c-card">
+                            <Grid xs={12} sm={6} md={4}>
+                                <div className="c-card">
                                     <div className="c-therow">
                                         <div className="c-subrow">
                                             <div className="c-avantar">
@@ -430,10 +443,16 @@ export default function Home() {
                                     <div className="c-freshprod">
                                         <img src={thecomputer}/>
                                     </div>
-                                    <div className="c-btn">
-                                        <Link className="c-btnprimary">
-                                            Visit Store
-                                        </Link>
+                                    <div className="c-freshdetail">
+                                        <div>
+                                            <FavoriteIcon className="colorHeart"/>
+                                        </div>
+                                        <div>
+                                            RM 3,899
+                                        </div>
+                                        <div>
+                                            New
+                                        </div>
                                     </div>
                                 </div>
                             </Grid>

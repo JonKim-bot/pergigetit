@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="c-footer">
                 <Container>
                     <Grid container spacing={3}>
-                        <Grid item xs={12} sm={3}>
+                        <Grid item xs={6} sm={3}>
                             <div className="navbar-footernav">
                                 <h4>Product Category</h4>
                                 <Link className="nav-footerlink">
@@ -41,7 +41,7 @@ export default function Footer() {
                                 </Link>
                             </div>
                         </Grid>
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={6} sm={6}>
                             <h4>Follow Us</h4>
                             <div className="navbar-footernav">
                                 <Link className="nav-socialfooter">

@@ -8,10 +8,172 @@
     position: relative;
     width: 100%;
     margin-bottom: 2rem;
+
+    .c-profile-mobile{
+        width: 100%;
+        padding-bottom :20px;
+        
+        
+        
+         @media screen and (max-width: 1920px){
+             display:none;
+         }
+         @media screen and (max-width: 764px){
+             display:block;
+         }
+        .c-profile-div{
+            margin-top: 10px;
+            margin-bottom:20px;
+            height:100%;
+            display:flex;
+            justify-content: space-between;
+
+            background-color: white;
+            .c-profile-left{
+                width:40%;
+                img{
+                    border-radius: 100%;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .c-profile-right{
+                width: 60%;
+                padding-left: 20px;
+                .c-profile-right-verify_social{
+                    display: flex;
+                    justify-content: flex-end;
+                    .c-profile-social-icon ul{
+                        display: flex;
+                        list-style-type: none;
+                        li{
+                            margin:0 5px;
+                        }
+                    }
+                }
+                .c-profile-float{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .c-profile-verify{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+                .c-profile-title{
+                    margin-top:0px;
+                    display: flex;
+                    h2{
+                        margin:0px;
+                        display:inline;
+
+        
+                    }
+                    button{
+                        margin-left:10px;
+                        height:100%;
+                        padding:8px 20px;
+                        border-radius: 5px;
+                        outline: none;
+                        border:none;
+                        background-color: #dba514;
+                         background: linear-gradient(118deg, #dba514 0%, #af8231 100%);
+                        color:white;
+                        font-weight: bolder;
+                    }
+                }
+                .c-profile-list{
+                    
+                    ul{
+                        list-style-type: none;
+                        display:flex;
+                        margin-left:0px;
+                        padding-left:0px;
+                        li{
+                            margin-right:25px;
+                        }
+                    }
+                }
+                
+
+            }
+        }
+        .c-profile-mobile-down{
+
+            .c-profile-description{
+                p{
+                    margin-bottom:0px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #007A84;
+                }
+            }
+            .c-profile-location{
+                display:flex;
+                align-items: center;
+            }
+            .c-profile-contacts{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+         
+                button{
+                    width:32%;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
+                    height: 100%;
+                    padding:8px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
+                    border:none;
+                    margin-right:0px
+                }
+                button:hover{
+                    background-color:lightgrey;
+                }
+    
+                
+            }
+            .c-profile-btnedit{
+    
+                margin-top: 15px;
+                button{
+                    width:100%;
+                    padding:8px 0px;
+                    height:100%;
+                    background-color: white;
+                    border:none;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
+                }
+            }
+        }
+    }
+
     .c-profile{
         width: 100%;
+        padding-bottom :20px;
+        
+        
         .c-profile-div{
-            width: 50%;
+            margin-top: 10px;
+            margin-bottom:20px;
+            @media screen and (max-width: 1920px){
+                width: 50%;
+
+            }
+            @media screen and (max-width: 992px){
+                width: 70%;
+            }
+            @media screen and (max-width: 764px){
+                width: 80%;
+            }
+            @media screen and (max-width: 764px){
+                display:none;
+            }
             height:300px;
             display:flex;
             justify-content: space-between;
@@ -82,6 +244,10 @@
                     p{
                         margin-bottom:0px;
                     }
+                    a{
+                        text-decoration: none;
+                        color: #007A84;
+                    }
                 }
                 .c-profile-location{
                     display:flex;
@@ -91,34 +257,35 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    div{
-                        width:100%;
-                        button{
-                            width:100%;
-                            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px 1px;
-                            height:100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            background-color: white;
-                            border:none;
-                            margin-right:0px
-                        }
-                        button:hover{
-                            background-color:lightgrey;
-                        }
-
+             
+                    button{
+                        width:32%;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
+                        height: 100%;
+                        padding:8px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: white;
+                        border:none;
+                        margin-right:0px
                     }
+                    button:hover{
+                        background-color:lightgrey;
+                    }
+
+                    
                 }
                 .c-profile-btnedit{
 
                     margin-top: 15px;
                     button{
                         width:100%;
-                        height:25px;
+                        padding:8px 0px;
+                        height:100%;
                         background-color: white;
                         border:none;
-                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
                     }
                 }
 
@@ -135,6 +302,7 @@
 
         .c-therow{
             align-items: center;
+            
             display: flex;
             justify-content: space-between;
 
@@ -668,6 +836,12 @@
     @media screen and (min-width: 992px) {
         right: -25px;
     }
+}
+
+
+@media screen and (max-width: 992px){
+ 
+
 }
 
 // label + .MuiInput-formControl{

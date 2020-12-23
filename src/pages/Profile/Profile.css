@@ -7,15 +7,163 @@
   width: 100%;
   margin-bottom: 2rem;
 }
+.c-section .c-profile-mobile {
+  width: 100%;
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 1920px) {
+  .c-section .c-profile-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 764px) {
+  .c-section .c-profile-mobile {
+    display: block;
+  }
+}
+.c-section .c-profile-mobile .c-profile-div {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-left {
+  width: 40%;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-left img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right {
+  width: 60%;
+  padding-left: 20px;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-right-verify_social {
+  display: flex;
+  justify-content: flex-end;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-right-verify_social .c-profile-social-icon ul {
+  display: flex;
+  list-style-type: none;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-right-verify_social .c-profile-social-icon ul li {
+  margin: 0 5px;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-float {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-float .c-profile-verify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-title {
+  margin-top: 0px;
+  display: flex;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-title h2 {
+  margin: 0px;
+  display: inline;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-title button {
+  margin-left: 10px;
+  height: 100%;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #dba514;
+  background: linear-gradient(118deg, #dba514 0%, #af8231 100%);
+  color: white;
+  font-weight: bolder;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-list ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.c-section .c-profile-mobile .c-profile-div .c-profile-right .c-profile-list ul li {
+  margin-right: 25px;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-description p {
+  margin-bottom: 0px;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-description a {
+  text-decoration: none;
+  color: #007A84;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-location {
+  display: flex;
+  align-items: center;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-contacts button {
+  width: 32%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
+  height: 100%;
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  margin-right: 0px;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-contacts button:hover {
+  background-color: lightgrey;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-btnedit {
+  margin-top: 15px;
+}
+.c-section .c-profile-mobile .c-profile-mobile-down .c-profile-btnedit button {
+  width: 100%;
+  padding: 8px 0px;
+  height: 100%;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
+}
 .c-section .c-profile {
   width: 100%;
+  padding-bottom: 20px;
 }
 .c-section .c-profile .c-profile-div {
-  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
   height: 300px;
   display: flex;
   justify-content: space-between;
   background-color: white;
+}
+@media screen and (max-width: 1920px) {
+  .c-section .c-profile .c-profile-div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .c-section .c-profile .c-profile-div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 764px) {
+  .c-section .c-profile .c-profile-div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 764px) {
+  .c-section .c-profile .c-profile-div {
+    display: none;
+  }
 }
 .c-section .c-profile .c-profile-div .c-profile-left {
   width: 20%;
@@ -77,6 +225,10 @@
 .c-section .c-profile .c-profile-div .c-profile-right .c-profile-description p {
   margin-bottom: 0px;
 }
+.c-section .c-profile .c-profile-div .c-profile-right .c-profile-description a {
+  text-decoration: none;
+  color: #007A84;
+}
 .c-section .c-profile .c-profile-div .c-profile-right .c-profile-location {
   display: flex;
   align-items: center;
@@ -86,13 +238,11 @@
   align-items: center;
   justify-content: space-between;
 }
-.c-section .c-profile .c-profile-div .c-profile-right .c-profile-contacts div {
-  width: 100%;
-}
-.c-section .c-profile .c-profile-div .c-profile-right .c-profile-contacts div button {
-  width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px 1px;
+.c-section .c-profile .c-profile-div .c-profile-right .c-profile-contacts button {
+  width: 32%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
   height: 100%;
+  padding: 8px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +250,7 @@
   border: none;
   margin-right: 0px;
 }
-.c-section .c-profile .c-profile-div .c-profile-right .c-profile-contacts div button:hover {
+.c-section .c-profile .c-profile-div .c-profile-right .c-profile-contacts button:hover {
   background-color: lightgrey;
 }
 .c-section .c-profile .c-profile-div .c-profile-right .c-profile-btnedit {
@@ -108,10 +258,11 @@
 }
 .c-section .c-profile .c-profile-div .c-profile-right .c-profile-btnedit button {
   width: 100%;
-  height: 25px;
+  padding: 8px 0px;
+  height: 100%;
   background-color: white;
   border: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 1px 1px;
 }
 .c-section .c-card {
   position: relative;

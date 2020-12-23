@@ -162,10 +162,8 @@
         .c-profile-div{
             margin-top: 10px;
             margin-bottom:20px;
-            @media screen and (max-width: 1920px){
-                width: 50%;
-
-            }
+            width:50%;
+          
             @media screen and (max-width: 992px){
                 width: 70%;
             }

@@ -142,15 +142,11 @@
 .c-section .c-profile .c-profile-div {
   margin-top: 10px;
   margin-bottom: 20px;
+  width: 50%;
   height: 300px;
   display: flex;
   justify-content: space-between;
   background-color: white;
-}
-@media screen and (max-width: 1920px) {
-  .c-section .c-profile .c-profile-div {
-    width: 50%;
-  }
 }
 @media screen and (max-width: 992px) {
   .c-section .c-profile .c-profile-div {

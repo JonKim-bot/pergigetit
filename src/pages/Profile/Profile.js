@@ -10,7 +10,6 @@ import thewatch from '../../assets/images/thewatch.png'
 import thecomputer from '../../assets/images/thecomputer.png'
 import search_icon from '../../assets/images/search_icon.png'
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-import AddIcon from '@material-ui/icons/Add';
 import { Link } from 'react-router-dom'
 import Slider from "react-slick";
 import './Profile.css'
@@ -19,7 +18,14 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import SearchIcon from '@material-ui/icons/Search';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import ListIcon from '@material-ui/icons/List';
+import RoomIcon from '@material-ui/icons/Room';
+import AddIcon from '@material-ui/icons/Add';
+import CropFreeIcon from '@material-ui/icons/CropFree';
+import ShareIcon from '@material-ui/icons/Share';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+
 import all_icon from '../../assets/images/icon_all.png'
 import new_icon from '../../assets/images/icon_new.png'
 import fast_icon from '../../assets/images/icon_fast.png'
@@ -27,6 +33,9 @@ import sold_icon from '../../assets/images/icon_sold.png'
 import NewReleasesIcon from '@material-ui/icons/NewReleases';
 import FormHelperText from '@material-ui/core/FormHelperText';
 
+import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
+import EmailIcon from '@material-ui/icons/Email';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const useStyles = makeStyles(theme => ({
     cForm: {
@@ -93,11 +102,84 @@ export default function MarketPlace() {
     return (
         <React.Fragment>
             <Header/>
-            <div className="c-banner">
-                <img src={banner2}/>
-            </div>
             <Container>
                 <div className="c-section">
+                    <div className="c-profile">
+                        <div className="c-profile-div">
+                            <div className="c-profile-left">
+                                <img src="https://www.jndesign.com.my/wp-content/uploads/2019/12/Jndesign-Round-White.png"/>
+
+                            </div>
+                            <div className="c-profile-right">
+                                <div className="c-profile-right-verify_social">
+                                    <div className="c-profile-verify">
+                                       <CheckCircleIcon style={{color: "#dba514", paddingRight: 5}}/>
+                                      
+                                        <p>Verified seller</p>
+                                    </div>
+                                    <div className="c-profile-social-icon">
+                                        <ul>
+                                            <li><AddIcon style={{color: "black", paddingRight: 5}}/></li>                                                
+                                            <li><CropFreeIcon style={{color: "black", paddingRight: 5}}/></li>                                                
+                                            <li><ShareIcon style={{color: "black", paddingRight: 5}}/></li>                                                
+                                            <li><MoreHorizIcon style={{color: "black", paddingRight: 5}}/></li>                                                
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="c-profile-title">
+                                    <h2>
+                                        JNDesign Store
+                                    </h2>
+                                    <button>
+                                        Follow
+                                    </button>
+                                </div>
+                                <div className="c-profile-list">
+                                    <ul>
+                                        <li><span style={{fontWeight:'bolder'}}>345</span> Listings</li>                                                
+                                        <li><span style={{fontWeight:'bolder'}}>345</span> Listings</li>                                                
+                                        <li><span style={{fontWeight:'bolder'}}>345</span> Listings</li>                                                
+                                    </ul>
+                                </div> 
+                                <div className="c-profile-description">
+                                    <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                                    <a href="link">www.google.com</a>
+                                </div>
+                                <div className="c-profile-location">
+                                    <RoomIcon style={{color: "black", paddingRight: 5}}/>
+
+                                    <p>Johor bahru , Johor</p>
+                                </div>
+                                <div className="c-profile-contacts">
+                                    <div>
+
+                                        <button>
+                                        <PhoneInTalkIcon style={{color: "black", paddingRight: 5}}/>
+
+                                            Contact
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button>
+                                        <EmailIcon style={{color: "black", paddingRight: 5}}/>
+                                            Email
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button>
+                                        <WhatsAppIcon style={{color: "black", paddingRight: 5}}/>
+                                            Whatsapp
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="c-profile-btnedit">
+                                    <button>
+                                        Edit Profile
+                                    </button>
+                                </div>                              
+                            </div>
+                        </div>
+                    </div>
                     <div className="c-title">
                         <div className="c-left">
                             <div className="c-search desktop_flex">

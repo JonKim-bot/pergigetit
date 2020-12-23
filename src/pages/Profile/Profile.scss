@@ -12,13 +12,9 @@
     .c-profile-mobile{
         width: 100%;
         padding-bottom :20px;
+        display:none;
         
-        
-        
-         @media screen and (max-width: 1920px){
-             display:none;
-         }
-         @media screen and (max-width: 764px){
+         @media screen and (max-width: 768px){
              display:block;
          }
         .c-profile-div{
@@ -26,6 +22,8 @@
             margin-bottom:20px;
             height:100%;
             display:flex;
+            align-items: center;
+
             justify-content: space-between;
 
             background-color: white;
@@ -34,7 +32,7 @@
                 img{
                     border-radius: 100%;
                     width: 100%;
-                    height: 100%;
+                
                 }
             }
             .c-profile-right{
@@ -68,7 +66,7 @@
                     h2{
                         margin:0px;
                         display:inline;
-
+                        font-size: 12px;
         
                     }
                     button{
@@ -156,7 +154,10 @@
     .c-profile{
         width: 100%;
         padding-bottom :20px;
-        
+        @media screen and (max-width: 768px){
+            display:none;
+
+        }
         
         .c-profile-div{
             margin-top: 10px;
@@ -168,12 +169,11 @@
             @media screen and (max-width: 992px){
                 width: 70%;
             }
-            @media screen and (max-width: 764px){
-                width: 80%;
-            }
-            @media screen and (max-width: 764px){
+            @media screen and (max-width: 768px){
                 display:none;
+
             }
+          
             height:300px;
             display:flex;
             justify-content: space-between;
@@ -184,7 +184,6 @@
                 img{
                     border-radius: 50%;
                     width: 100%;
-                    height: 120px;
                 }
             }
             .c-profile-right{
